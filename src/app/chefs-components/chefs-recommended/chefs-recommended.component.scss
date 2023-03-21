@@ -1,0 +1,79 @@
+.card-container{
+  height: 400vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  //overflow-x: hidden;
+}
+.card{
+  width: 70%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.card img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+.dish-title{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 65%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: oblique;
+  line-height: 3.5rem;
+}
+
+.dish-title-container{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-right {
+  animation: fade-right 1.5s ease-in;
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(12vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card{
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+<div class="test">
+  <div class="chefs-container">
+    <div class="chef-card hidden" #chef1 IntersectionDetector (intersected)="showChef($event, chef1)">
+      <div class="chef-info">
+        <div class="chef-name">
+          Kenjiro Nakamura
+        </div>
+        <div class="chef-bio">
+          Japanese chef. He learned to cook from his grandmother in Tokyo and moved to NYC to
+          further develop his skills. Today, he runs highly acclaimed Japanese restaurant.
+        </div>
+      </div>
+    </div>
+    <div class="chef-card hidden" #chef2 IntersectionDetector (intersected)="showChef($event, chef2)">
+      <div class="chef-info">
+        <div class="chef-name">
+          Mei-Ling Chen
+        </div>
+        <div class="chef-bio">
+          Taiwanese chef. He grew up cooking with her mother and pursued a career in the culinary
+          arts after studying in Taiwan at a high-end Japanese restaurant.
+        </div>
+      </div>
+    </div>
+    <div class="chef-card hidden" #chef3 IntersectionDetector (intersected)="showChef($event, chef3)">
+      <div class="chef-info">
+        <div class="chef-name">
+          Yuto Tanaka
+        </div>
+        <div class="chef-bio">
+          Japanese chef based in London. He comes from a family of chefs in Osaka and worked in Tokyo before moving to
+          NYC to become head chef. Today, he's known for his innovative approach to
+          traditional Japanese dishes.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="card-container">
+  <div class="card">
+    <img src="assets/dishes/1.jpg" alt="Steak">
+    <div class="dish-title-container">
+      <div class="dish-title reveal fade-right" #dish1 IntersectionDetector (intersected)="toggleVisible($event, dish1)" [threshold]="0.8">
+        Steak with asparagus
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="assets/dishes/2.jpg" alt="Crepes">
+    <div class="dish-title-container">
+      <div class="dish-title reveal fade-right" #dish2 IntersectionDetector (intersected)="toggleVisible($event, dish2)">
+        Raspberry Crêpes
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="assets/dishes/3.jpg" alt="Spaghetti">
+    <div class="dish-title-container">
+      <div class="dish-title reveal fade-right" #dish3 IntersectionDetector (intersected)="toggleVisible($event, dish3)">
+        Spaghetti ai frutti di mare
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="assets/dishes/4.jpg" alt="Salmon">
+    <div class="dish-title-container">
+      <div class="dish-title reveal fade-right" #dish4 IntersectionDetector (intersected)="toggleVisible($event, dish4)">
+        Salmon with mediterranean salsa
+      </div>
+    </div>
+  </div>
+</div>
