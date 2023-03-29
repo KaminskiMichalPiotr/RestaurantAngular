@@ -1,0 +1,13 @@
+@import "src/shared/shared";
+
+mat-tab-group{
+  width: 60%;
+  min-height: 80%;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: $mobile-width){
+  mat-tab-group{
+    width: 80%;
+  }
+}

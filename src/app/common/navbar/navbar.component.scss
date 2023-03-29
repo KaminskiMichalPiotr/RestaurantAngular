@@ -1,5 +1,73 @@
 .navbar-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20%;
+}
+
+.menu-item{
+  position: relative;
+  transition:.5s;
+  cursor: pointer;
+}
+
+.menu-item::before{
+  position: absolute;
+  text-decoration: none;
+  content: '';
+  height: 3px;
+  bottom: -7px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 10px;
+  background: white;
+  transition:.3s ease-in;
+}
+
+.menu-item:hover:before {
   width: 100%;
-  height: 20%;
-  background: linear-gradient(yellow, green);
+  background: lightgray;
+}
+.menu-item:hover{
+  color: lightgray;
+}
+
+
+.logo{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logo > img {
+  height: 5rem;
+  border-radius: 50%;
+  background: white;
+  border: 5px white solid;
+  margin-right: 8px;
+}
+
+.book-now{
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
 }

@@ -1,0 +1,27 @@
+<div class="homepage-navbar-container">
+  <p class="navbar-background"></p>
+  <div class="navbar-spacer">
+    <div class="navbar-spacer-filler"></div>
+    <div class="navbar-spacer-phone">
+      <mat-icon aria-hidden="false" aria-label="phone icon" fontIcon="phone_in_talk"></mat-icon>
+      +00 000 000 000
+    </div>
+    <div class="navbar-spacer-location">
+      <mat-icon aria-hidden="false" aria-label="phone icon" fontIcon="pin_drop"></mat-icon>
+      Example Street 0, New York
+    </div>
+  </div>
+  <div class="homepage-navbar" [ngClass]="{'sticky': isSticky}">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="homepage-caption">
+    <h1>
+      Looking for a delicious dining experience?
+    </h1>
+    <p>
+      Look no further than our restaurant!
+      From our mouthwatering menu to our top-notch service, we guarantee a meal you won't forget.
+      Come join us and indulge in the flavors of our expertly crafted dishes.
+    </p>
+  </div>
+</div>

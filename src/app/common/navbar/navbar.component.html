@@ -1,3 +1,12 @@
 <div class="navbar-container">
-  <p>navbar works!</p>
+  <div class="logo" [routerLink]="'/'">
+    <img src="assets/logo.png" alt="Logo">
+    Brooklyn Bites
+  </div>
+  <ul class="menu">
+    <li class="menu-item" [routerLink]="'/our-mission'">Our mission</li>
+    <li class="menu-item" [routerLink]="'/chefs-recommended'">Chefs Recommended</li>
+    <li class="menu-item" [routerLink]="'/menu'">Menu</li>
+    <li class="menu-item" [routerLink]="'/contact'">Contact</li>
+  </ul>
 </div>

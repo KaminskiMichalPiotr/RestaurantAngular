@@ -9,6 +9,15 @@ import { NavbarComponent } from './common/navbar/navbar.component';
 import { ChefsAboutComponent } from './chefs-components/chefs-about/chefs-about.component';
 import { IntersectionDetectorDirective } from './directives/intersection-detector.directive';
 import { ChefsRecommendedComponent } from './chefs-components/chefs-recommended/chefs-recommended.component';
+import { HomepageNavbarComponent } from './homepage/homepage-navbar/homepage-navbar.component';
+import {MatIconModule} from "@angular/material/icon";
+import { OurMissionComponent } from './our-mission/our-mission.component';
+import { ContactComponent } from './contact/contact.component';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
+import {MatTabsModule} from "@angular/material/tabs";
+import { DishItemComponent } from './menu/dish-item/dish-item.component';
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -17,13 +26,22 @@ import { ChefsRecommendedComponent } from './chefs-components/chefs-recommended/
     NavbarComponent,
     ChefsAboutComponent,
     IntersectionDetectorDirective,
-    ChefsRecommendedComponent
+    ChefsRecommendedComponent,
+    HomepageNavbarComponent,
+    OurMissionComponent,
+    ContactComponent,
+    MenuComponent,
+    HomeComponent,
+    DishItemComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatTabsModule,
+        MatListModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

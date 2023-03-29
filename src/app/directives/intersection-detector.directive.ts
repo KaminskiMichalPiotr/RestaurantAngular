@@ -14,7 +14,7 @@ import {
 })
 export class IntersectionDetectorDirective implements AfterViewInit, OnDestroy{
 
-  @Input() threshold = 0.7;
+  @Input() threshold = 0;
 
   observer!: IntersectionObserver;
 

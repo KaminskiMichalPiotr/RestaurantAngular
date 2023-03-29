@@ -1,0 +1,22 @@
+.title{
+  width: 70%;
+  font-size: 3rem;
+  color: black;
+  margin: 3rem auto 2rem auto;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.title > h1{
+  font: normal bold 44px / 54px "Palanquin", Helvetica, Arial, Verdana, sans-serif;
+  text-align: center;
+}
+.spacer{
+  flex: 1;
+  height: 4px;
+  width: 100%;
+  background: #1a1c20;
+  margin-bottom: 20px;
+}

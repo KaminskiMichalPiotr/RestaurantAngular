@@ -1,25 +1,43 @@
-.test{
+@import "src/shared/shared";
+@import "src/shared/title";
+
+*{
+  line-height: 1.25rem;
+}
+
+.chefs{
   display: flex;
   height: auto;
-  margin: 1rem auto;
+  margin: 2rem auto 4rem auto;
   width: 70%;
-
 }
 
 .chefs-container{
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 80vh;
+  height: auto;
 }
+
 .chef-card{
-  width: 30%;
-  height: 45vh;
-  background-size: cover;
+  width: 25%;
+  aspect-ratio: 10/16;
   border-radius: 30px;
 }
+
+.chef-card img{
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  filter: brightness(0.75);
+}
+
 .chef-card:hover{
   outline: 0.5rem solid lightgray;
 }
@@ -27,7 +45,7 @@
 .hidden{
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(-100%);
+  transform: translateX(-180%);
   transition: transform 1.5s cubic-bezier(0.1, 0.7, 1, 0.1), blur 0.75s ease-in-out, opacity 1.5s ease-in-out;
 }
 
@@ -39,14 +57,9 @@
 
 .chef-card:nth-child(1){
   transition-delay: 500ms;
-  background-image: url('/../assets/chefs/1.jpg');
 }
 .chef-card:nth-child(2){
   transition-delay: 250ms;
-  background-image: url('/../assets/chefs/2.jpg');
-}
-.chef-card:nth-child(3){
-  background-image: url('/../assets/chefs/3.jpg');
 }
 
 .chef-info{
@@ -54,21 +67,47 @@
   height: 100%;
   color: white;
   display: flex;
+  overflow: auto;
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
+  padding: 0 5%;
 }
 .chef-name{
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 1rem;
+  line-height: 2rem;
 }
 .chef-bio{
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 700px)  {
-  .chefs-container {
+
+
+@media screen and (max-width: $mobile-width)  {
+  .chefs-container{
     flex-direction: column;
+    gap: 1rem
+  }
+  .chef-card{
+    width: 100%;
+    aspect-ratio: 4/6;
+  }
+  .show{
+    transform: none;
+    opacity: 1;
+  }
+  .hidden{
+    transform: none;
+    opacity: 1;
+  }
+  .chef-name{
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .chef-bio{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }

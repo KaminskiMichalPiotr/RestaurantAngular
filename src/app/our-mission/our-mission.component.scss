@@ -1,0 +1,83 @@
+@import "src/shared/shared.scss";
+@import "src/shared/title";
+
+.bio{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.bio-container{
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "picture1 text1"
+    "text2 picture2"
+    "picture3 text3"
+    "text4 picture4";
+  grid-gap: 2rem;
+}
+
+.text.first{
+  grid-area: text1;
+}
+.text.second{
+  grid-area: text2;
+}
+.text.third{
+  grid-area: text3;
+}
+.text.fourth{
+  grid-area: text4;
+}
+.picture.first{
+  grid-area: picture1;
+}
+.picture.second{
+  grid-area: picture2;
+}
+.picture.third {
+  grid-area: picture3;
+}
+.picture.fourth{
+  grid-area: picture4;
+}
+
+.picture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.picture > img{
+  width: 85%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.text{
+  padding: 0 3.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.7rem;
+  text-align: justify;
+}
+
+.grid-item.text{
+  font-size: 1.2rem;
+  text-indent: 3rem;
+}
+
+@media screen and (max-width: $mobile-width){
+  .bio-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "picture1" "text1"
+    "picture2" "text2"
+    "picture3" "text3"
+    "picture4" "text4";
+    grid-gap: 2rem;
+  }
+}

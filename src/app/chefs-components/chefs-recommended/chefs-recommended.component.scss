@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   //overflow-x: hidden;
 }
 .card{
@@ -71,6 +71,42 @@
     opacity: 1;
   }
 }
+
+.title{
+  width: 70%;
+  font-size: 3rem;
+  color: black;
+  margin: 3rem auto;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.title > h1{
+  font: normal bold 44px / 54px "Palanquin", Helvetica, Arial, Verdana, sans-serif;
+  text-align: center;
+}
+.spacer{
+  flex: 1;
+  height: 4px;
+  width: 100%;
+  background: #1a1c20;
+  margin-bottom: 20px;
+}
+
+.dishes-description{
+  width: 50%;
+  margin: 3rem auto;
+  line-height: 1.7rem;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.dishes-description > p {
+  margin: 1rem 0;
+}
+
 
 @media screen and (max-width: 700px) {
   .card{

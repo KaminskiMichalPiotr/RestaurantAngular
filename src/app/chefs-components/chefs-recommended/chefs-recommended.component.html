@@ -1,8 +1,34 @@
+<div class="title">
+  <div class="spacer"></div>
+  <h1>BEST DISHES COMES FIRST</h1>
+  <div class="spacer "></div>
+</div>
+
+
+<section class="dishes-description">
+  <p>If you're looking for some delicious dishes to try out, I would highly recommend the following four options: Raspberry
+    Crêpes, Steak with Asparagus, Spaghetti ai Frutti di Mare, and Salmon with Mediterranean Salsa.</p>
+  <p>First up, the Raspberry Crêpes are a fantastic breakfast or brunch option that are sure to satisfy your sweet tooth.
+    These delicate, French-style pancakes are filled with a sweet raspberry sauce and topped with fresh berries and
+    whipped cream. They're easy to make and a great way to start your day off right!</p>
+  <p>For a more hearty meal, the Steak with Asparagus is an excellent choice. This dish features tender, juicy steak cooked
+    to perfection, served alongside crispy, tender asparagus spears. It's a classic combination that never fails to
+    impress, and it's sure to satisfy even the heartiest of appetites.</p>
+  <p>If you're in the mood for some seafood, the Spaghetti ai Frutti di Mare is a must-try. This Italian classic features a
+    medley of fresh seafood, including shrimp, clams, and mussels, all tossed with spaghetti noodles and a rich, flavorful
+    tomato sauce. It's a dish that's sure to transport you to the Italian coast with every bite.</p>
+  <p>Last but not least, the Salmon with Mediterranean Salsa is a healthy and delicious option that's perfect for a light
+    dinner or lunch. The salmon is grilled to perfection and served with a tangy and flavorful salsa made from fresh
+    tomatoes, olives, and capers. It's a dish that's both refreshing and satisfying.</p>
+</section>
+
+
 <div class="card-container">
   <div class="card">
     <img src="assets/dishes/1.jpg" alt="Steak">
     <div class="dish-title-container">
-      <div class="dish-title reveal fade-right" #dish1 IntersectionDetector (intersected)="toggleVisible($event, dish1)" [threshold]="0.8">
+      <div class="dish-title reveal fade-right" #dish1 IntersectionDetector
+           (intersected)="toggleVisible($event, dish1)">
         Steak with asparagus
       </div>
     </div>
@@ -10,7 +36,8 @@
   <div class="card">
     <img src="assets/dishes/2.jpg" alt="Crepes">
     <div class="dish-title-container">
-      <div class="dish-title reveal fade-right" #dish2 IntersectionDetector (intersected)="toggleVisible($event, dish2)">
+      <div class="dish-title reveal fade-right" #dish2 IntersectionDetector
+           (intersected)="toggleVisible($event, dish2)">
         Raspberry Crêpes
       </div>
     </div>
@@ -18,7 +45,8 @@
   <div class="card">
     <img src="assets/dishes/3.jpg" alt="Spaghetti">
     <div class="dish-title-container">
-      <div class="dish-title reveal fade-right" #dish3 IntersectionDetector (intersected)="toggleVisible($event, dish3)">
+      <div class="dish-title reveal fade-right" #dish3 IntersectionDetector
+           (intersected)="toggleVisible($event, dish3)">
         Spaghetti ai frutti di mare
       </div>
     </div>
@@ -26,7 +54,8 @@
   <div class="card">
     <img src="assets/dishes/4.jpg" alt="Salmon">
     <div class="dish-title-container">
-      <div class="dish-title reveal fade-right" #dish4 IntersectionDetector (intersected)="toggleVisible($event, dish4)">
+      <div class="dish-title reveal fade-right" #dish4 IntersectionDetector
+           (intersected)="toggleVisible($event, dish4)">
         Salmon with mediterranean salsa
       </div>
     </div>

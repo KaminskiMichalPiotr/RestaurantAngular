@@ -1,0 +1,128 @@
+@import "src/shared/shared.scss";
+$base-width: 70%;
+$container-height: 70%;
+
+.homepage-navbar-container{
+  height: $container-height;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-navbar-container > p {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.6);
+  background-image: url('/assets/home/home-main.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-spacer{
+  height: 7vh;
+  width: $base-width;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-spacer > div {
+  color: white;
+  font-size: 1.2rem;
+}
+
+mat-icon{
+  margin-right: 7px;
+}
+
+.navbar-spacer-filler{
+  flex: 1;
+}
+
+.navbar-spacer-phone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-spacer-location{
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-spacer-location:hover,.navbar-spacer-phone:hover{
+  color: lightgray !important;
+}
+
+.homepage-navbar{
+  width: $base-width;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.homepage-caption{
+  flex: 1;
+  width: $base-width;
+  position: relative;
+  font-style: oblique;
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.homepage-caption > p{
+  width: 50%;
+  line-height: 2rem;
+}
+
+.homepage-caption > h1{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.sticky{
+  background: #1a1c20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  left: 49.9%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: $mobile-width) {
+  .homepage-caption{
+    display: none;
+  }
+  .navbar-spacer-filler{
+    flex: none;
+  }
+  .navbar-spacer{
+    width: 100%;
+  }
+  .navbar-spacer-location{
+    margin-right: 0;
+    flex: 1;
+  }
+
+
+}
