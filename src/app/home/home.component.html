@@ -1,10 +1,10 @@
 <div class="title">
   <div class="spacer"></div>
-  <h1>OUR MISSION</h1>
+  <h1>Special place for dining experience</h1>
   <div class="spacer"></div>
 </div>
 
-<div class="container">
+<div class="article">
   <p>
     Welcome to our restaurant, where we're passionate about creating a dining experience that's second to none. With
     some of the best chefs in the business, we're dedicated to creating dishes that are not only delicious, but also
@@ -20,5 +20,12 @@
     experience. Whether you're joining us for a quick lunch or a special dinner, we're honored to have you as our guest,
     and we can't wait to share our passion for food and hospitality with you.
   </p>
+</div>
+
+
+<div class="gallery-container">
+  <div class="gallery-grid" *ngFor="let i of [].constructor(4); let k=index">
+    <img *ngFor="let image of _albums.slice((k*4), ((k+1)*4)); let j=index" [src]="image.thumb" (click)="open(j)" />
+  </div>
 </div>
 

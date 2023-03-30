@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import { DishItemComponent } from './menu/dish-item/dish-item.component';
 import {MatListModule} from "@angular/material/list";
+import {LightboxModule} from "ngx-lightbox";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {MatListModule} from "@angular/material/list";
         BrowserAnimationsModule,
         MatIconModule,
         MatTabsModule,
-        MatListModule
+        MatListModule,
+        LightboxModule
     ],
   providers: [],
   bootstrap: [AppComponent]

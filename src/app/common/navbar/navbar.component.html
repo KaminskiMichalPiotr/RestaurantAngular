@@ -1,9 +1,14 @@
 <div class="navbar-container">
   <div class="logo" [routerLink]="'/'">
-    <img src="assets/logo.png" alt="Logo">
-    Brooklyn Bites
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo">
+      Brooklyn Bites
+    </div>
+    <div class="menu-button">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu" (click)="toggleMenu()"></mat-icon>
+    </div>
   </div>
-  <ul class="menu">
+  <ul class="menu" *ngIf="!isToggled">
     <li class="menu-item" [routerLink]="'/our-mission'">Our mission</li>
     <li class="menu-item" [routerLink]="'/chefs-recommended'">Chefs Recommended</li>
     <li class="menu-item" [routerLink]="'/menu'">Menu</li>

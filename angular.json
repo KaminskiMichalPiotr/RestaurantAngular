@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/ngx-lightbox/lightbox.css",
               "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],

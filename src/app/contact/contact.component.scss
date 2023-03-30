@@ -1,0 +1,33 @@
+@import "src/shared/title";
+@import "src/shared/article";
+
+.map-outer {
+  position: relative;
+  height: 500px;
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+.gmap_canvas {
+  overflow: hidden;
+  height: 500px;
+  width: 1000px;
+}
+iframe {
+  border: 0;
+  width:100%;
+  height:100%;
+}
+
+.invitation{
+  width: 50%;
+  margin: 3rem auto;
+  line-height: 1.7rem;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.invitation > p {
+  margin: 1rem 0;
+}

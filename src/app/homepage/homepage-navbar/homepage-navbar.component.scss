@@ -18,7 +18,7 @@ $container-height: 70%;
   top: 0;
   left: 0;
   filter: brightness(0.6);
-  background-image: url('/assets/home/home-main.jpg');
+  background-image: url('/assets/home/home-main.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@ mat-icon{
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  transition: width 0.5s ease-in, transform 0.5s ease-in;
+  transition: width 0.2s ease-in, transform 0.5s ease-in;
 }
 
 .homepage-caption{
@@ -107,9 +107,16 @@ mat-icon{
   z-index: 500;
   left: 49.9%;
   transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: $mobile-width) {
+.homepage-navbar.sticky > app-navbar{
+    width: 70%;
+}
+
+@media screen and (max-width: $mobile-width) {
   .homepage-caption{
     display: none;
   }
@@ -123,6 +130,27 @@ mat-icon{
     margin-right: 0;
     flex: 1;
   }
-
-
+  .homepage-navbar{
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .homepage-navbar-container{
+    height: auto;
+  }
 }
+
+@media screen and (max-width: $medium-width) {
+  .homepage-navbar.sticky > app-navbar{
+    width: 100%;
+  }
+  .homepage-caption{
+    display: none;
+  }
+  .homepage-navbar-container{
+    height: auto;
+  }
+  .homepage-navbar{
+    width: 100%;
+  }
+}
+
