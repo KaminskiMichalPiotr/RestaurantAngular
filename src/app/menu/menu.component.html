@@ -1,17 +1,20 @@
-<mat-tab-group>
-  <mat-tab label="Starters">
-    <app-dish-item *ngFor="let dish of starters" [dish]="dish"></app-dish-item>
-  </mat-tab>
-  <mat-tab label="Soups">
-    <app-dish-item *ngFor="let dish of soups" [dish]="dish"></app-dish-item>
-  </mat-tab>
-  <mat-tab label="Main Courses">
-    <app-dish-item *ngFor="let dish of mainCourses" [dish]="dish"></app-dish-item>
-  </mat-tab>
-  <mat-tab label="Desserts">
-    <app-dish-item *ngFor="let dish of desserts" [dish]="dish"></app-dish-item>
-  </mat-tab>
-  <mat-tab label="Drinks">
+<div class="container">
+  <mat-tab-group>
+    <mat-tab label="Starters">
+      <app-dish-item *ngFor="let dish of starters" [dish]="dish"></app-dish-item>
+    </mat-tab>
+    <mat-tab label="Soups">
+      <app-dish-item *ngFor="let dish of soups" [dish]="dish"></app-dish-item>
+    </mat-tab>
+    <mat-tab label="Main Courses">
+      <app-dish-item *ngFor="let dish of mainCourses" [dish]="dish"></app-dish-item>
+    </mat-tab>
+    <mat-tab label="Desserts">
+      <app-dish-item *ngFor="let dish of desserts" [dish]="dish"></app-dish-item>
+    </mat-tab>
+    <mat-tab label="Drinks">
       <app-dish-item *ngFor="let dish of drinks" [dish]="dish"></app-dish-item>
-  </mat-tab>
-</mat-tab-group>
+    </mat-tab>
+  </mat-tab-group>
+
+</div>

@@ -1,5 +1,6 @@
 @import "src/shared/shared";
 
+
 .navbar-container{
   display: flex;
   flex-wrap: wrap;
@@ -108,5 +109,10 @@ mat-icon{
     display: inline-block;
     float: right;
     transform: scale(1.5);
+  }
+}
+@media screen and (max-width: $mobile-width) {
+  .logo-container {
+    padding-right: 2rem;
   }
 }

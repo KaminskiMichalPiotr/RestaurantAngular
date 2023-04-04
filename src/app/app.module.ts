@@ -19,6 +19,7 @@ import {MatTabsModule} from "@angular/material/tabs";
 import { DishItemComponent } from './menu/dish-item/dish-item.component';
 import {MatListModule} from "@angular/material/list";
 import {LightboxModule} from "ngx-lightbox";
+import { AccordionComponent } from './home/accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {LightboxModule} from "ngx-lightbox";
     ContactComponent,
     MenuComponent,
     HomeComponent,
-    DishItemComponent
+    DishItemComponent,
+    AccordionComponent
   ],
     imports: [
         BrowserModule,

@@ -22,10 +22,20 @@
   </p>
 </div>
 
+<app-accordion></app-accordion>
+
+<div class="title">
+  <div class="spacer"></div>
+  <h1>Explore our place</h1>
+  <div class="spacer"></div>
+</div>
+
 
 <div class="gallery-container">
   <div class="gallery-grid" *ngFor="let i of [].constructor(4); let k=index">
-    <img *ngFor="let image of _albums.slice((k*4), ((k+1)*4)); let j=index" [src]="image.thumb" (click)="open(j)" />
+    <div class="image-wrapper" *ngFor="let image of _albums.slice((k*4), ((k+1)*4)); let j=index">
+      <img [src]="image.thumb" (click)="open(j)" [alt]="image.caption" />
+    </div>
   </div>
 </div>
 

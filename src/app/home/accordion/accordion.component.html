@@ -1,0 +1,82 @@
+<div class="accordion-wrapper">
+  <div class="accordion" #accordion>
+    <div class="card" (click)="cardSelected($event)">
+      <div class="card-image">
+        <img src="assets/accordion/chinese.webp" alt="chinese">
+      </div>
+      <div class="card-icon">
+        <div class="icon-container">
+          <img src="assets/flags/china.webp" alt="china">
+          <div class="label">Chinese</div>
+        </div>
+        <div class="icon-description">
+          Characterized by a diverse range of flavors and cooking techniques, including stir-frying, steaming, and
+          braising. Popular dishes include dumplings, noodles, and rice.
+        </div>
+      </div>
+    </div>
+    <div class="card card-active" (click)="cardSelected($event)">
+      <div class="card-image">
+        <img src="assets/accordion/french.webp" alt="french">
+      </div>
+      <div class="card-icon">
+        <div class="icon-container">
+          <img src="assets/flags/france.webp" alt="france">
+          <div class="label">French</div>
+          <div class="icon-filler"></div>
+        </div>
+        <div class="icon-description">
+          Renowned for its elegance and refinement, French cuisine emphasizes rich, complex flavors and techniques such
+          as
+          braising, roasting, and sautéing. Popular dishes include coq au vin, boeuf bourguignon, and crème brûlée.
+        </div>
+      </div>
+    </div>
+    <div class="card" (click)="cardSelected($event)">
+      <div class="card-image">
+        <img src="assets/accordion/italian.webp" alt="italian">
+      </div>
+      <div class="card-icon">
+        <div class="icon-container">
+          <img src="assets/flags/italy.webp" alt="italy">
+          <div class="label">Italian</div>
+        </div>
+        <div class="icon-description">
+          Famous for its use of fresh ingredients, such as tomatoes, olive oil, and cheese, Italian cuisine includes
+          dishes such as pasta, pizza, and risotto.
+        </div>
+      </div>
+    </div>
+    <div class="card" (click)="cardSelected($event)">
+      <div class="card-image">
+        <img src="assets/accordion/japanese.webp" alt="japanese">
+      </div>
+      <div class="card-icon">
+        <div class="icon-container">
+          <img src="assets/flags/japan.webp" alt="japan">
+          <div class="label">Japanese</div>
+        </div>
+        <div class="icon-description">
+          Known for its emphasis on fresh, seasonal ingredients and simple preparation methods, Japanese cuisine
+          features
+          dishes such as sushi, sashimi, and tempura.
+        </div>
+      </div>
+    </div>
+    <div class="card" (click)="cardSelected($event)">
+      <div class="card-image">
+        <img src="assets/accordion/american.webp" alt="american">
+      </div>
+      <div class="card-icon">
+        <div class="icon-container">
+          <img src="assets/flags/united-states.webp" alt="united-states">
+          <div class="label">American</div>
+        </div>
+        <div class="icon-description">
+          Heavily influenced by European, African, and Native American cultures, American cuisine includes a variety of
+          regional dishes, such as burgers, fried chicken, and barbecue.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

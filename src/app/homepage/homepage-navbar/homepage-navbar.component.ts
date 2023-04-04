@@ -1,4 +1,5 @@
 import {Component, DoCheck, HostListener, KeyValueDiffer, KeyValueDiffers} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-homepage-navbar',
@@ -9,14 +10,20 @@ export class HomepageNavbarComponent implements DoCheck{
 
   isSticky: boolean = false;
   isToggled = false;
+  router: Router;
+
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    this.isSticky = window.scrollY >= 250;
+    // this.isSticky = window.scrollY >= 250 && !this.router.isActive('/menu', true);
+    this.isSticky = window.scrollY >= 250 && window.innerWidth > 756;
+
   }
 
+
   differ: KeyValueDiffer<string, any>;
-  constructor(private differs: KeyValueDiffers) {
+  constructor(private differs: KeyValueDiffers, router: Router) {
+    this.router = router;
     this.differ = this.differs.find({}).create();
   }
 

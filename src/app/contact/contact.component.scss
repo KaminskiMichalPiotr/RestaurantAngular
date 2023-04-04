@@ -1,5 +1,6 @@
 @import "src/shared/title";
 @import "src/shared/article";
+@import "src/shared/shared";
 
 .map-outer {
   position: relative;
@@ -30,4 +31,10 @@ iframe {
 
 .invitation > p {
   margin: 1rem 0;
+}
+
+@media screen and (max-width: $mobile-width){
+  .map-outer{
+    width: 95%;
+  }
 }

@@ -1,11 +1,16 @@
+@import "src/shared/shared";
+
 .footer-container{
   width: 100%;
   //min-height: min-content;
-  height: 10%;
+  min-height: 10%;
+  padding: 1rem 0;
   background: #1a1c20;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 0;
 }
 .footer-info{
   display: flex;
@@ -32,3 +37,16 @@ mat-icon{
   flex: 1;
 }
 
+@media screen and (max-width: $mobile-width) {
+  .footer-info{
+    flex-direction: column;
+  }
+  .footer-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-spacer{
+    display: none;
+  }
+}
