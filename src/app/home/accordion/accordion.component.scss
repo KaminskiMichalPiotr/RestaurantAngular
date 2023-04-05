@@ -139,13 +139,14 @@
   }
   .accordion-wrapper{
     width: 90%;
-    height: 80%;
+    height: auto;
   }
   .icon-description{
     padding-left: 1rem;
+    padding-bottom: 1rem;
   }
-  .icon-filler{
-    display: block;
-    flex: 1;
+  .card-active{
+    flex: none;
+    flex-basis: fit-content;
   }
 }
